@@ -1,4 +1,4 @@
-# Krish Uttam Vikalp
+# Kresh Uttam Vikalp
 
 I built this full-stack crop recommendation and yield prediction platform to empower farmers and agricultural stakeholders with data-driven insights. The application leverages machine learning models to provide personalized crop, yield, and fertilizer recommendations based on user input and historical data.
 
