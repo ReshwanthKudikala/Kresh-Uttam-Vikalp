@@ -72,7 +72,7 @@ const HomeScreen = () => {
             <Image source={{ uri: feature.image }} style={styles.cardImage} />
             <Text style={styles.cardTitle}>{feature.title}</Text>
             <Text style={styles.cardDesc}>{feature.desc}</Text>
-            <TouchableOpacity style={styles.button} onPress={() => router.push(feature.route)}>
+            <TouchableOpacity style={styles.button} onPress={() => router.push(feature.route as any)}>
               <Text style={styles.buttonText}>{feature.buttonText}</Text>
             </TouchableOpacity>
           </View>

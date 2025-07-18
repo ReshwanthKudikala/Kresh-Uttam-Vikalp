@@ -32,7 +32,7 @@ export default function FertilizerRecommendation() {
 
       const recommendation = response.data.recommendation;
       console.log(recommendation);
-      router.push({ pathname: '/fertilizerResult', params: { recommendation } });
+      router.push({ pathname: '/fertilizerResult' as any, params: { recommendation } });
 
     } catch (error) {
       console.error(error);

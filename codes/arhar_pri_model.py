@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 import pickle
 
-df = pd.read_csv('..\datasets\harvest production dataset.csv')
+df = pd.read_csv(r'..\datasets\harvest production dataset.csv')
 
 arhar = df[['Dist Code','Year','ARHAR AREA (1000 ha)','ARHAR PRODUCTION (1000 Quintal)','ARHAR HARVEST PRICE (Rs per Quintal)']]
 arhar = arhar.interpolate(method='linear')
@@ -21,4 +21,4 @@ arhar_model_2 = linear_model.LinearRegression()
 arhar_model_2.fit(arhar_X2, arhar_y2)
 
 #pickle file
-pickle.dump(arhar_model_2, open('..\pkl_files\\arhar_pri_model.pkl', 'wb'))
+pickle.dump(arhar_model_2, open(r'..\pkl_files\\arhar_pri_model.pkl', 'wb'))
